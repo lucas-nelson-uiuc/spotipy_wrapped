@@ -1,5 +1,2 @@
 select *
-from read_json(
-    
-    format='auto'
-)
+from spotify_streaming_history
