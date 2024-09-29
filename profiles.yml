@@ -1,0 +1,14 @@
+# replace "my_project" with the name that matches the project name in step 6.
+my_project:
+  outputs:
+    dev:
+      type: duckdb
+      schema: main
+      path: md:spotify_extract
+      threads: 1
+    local:
+      type: duckdb
+      schema: main
+      path: local.duckdb
+      threads: 1
+  target: dev

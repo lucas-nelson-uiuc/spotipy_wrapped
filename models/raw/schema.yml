@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: streaming_history
+    description: "Streaming History of all songs from Spotify download"
+    columns:
+      - name: endTime
+        description: "Name of artist"
+        tests:
+          - not_null
+      - name: artistName
+        description: "Name of artist"
+      - name: trackName
+        description: "Name of artist"
+      - name: msPlayed
+        description: "Name of artist"
+
+  - name: my_second_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
